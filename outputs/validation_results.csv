@@ -1,0 +1,4 @@
+model,roc_auc,pr_auc,precision_top5,capture_top5,brier
+logistic,0.754,0.407,0.569,0.187,0.112
+hist_gradient_boosting,0.753,0.407,0.574,0.189,0.112
+xgboost,0.752,0.408,0.566,0.186,0.112
