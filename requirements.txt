@@ -1,0 +1,10 @@
+# Install ONLY from the approved internal index (Artifactory):
+#   pip install --index-url "$ARTIFACTORY_PYPI_URL" -r requirements.txt
+numpy==2.5.3
+pandas==3.0.5
+scikit-learn==1.9.1
+joblib==1.6.0
+xgboost==3.4.1
+fastapi==0.164.0
+uvicorn==0.54.0
+pydantic==2.13.5
