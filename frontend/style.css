@@ -1,8 +1,0 @@
-body{font:16px/1.5 system-ui,sans-serif;margin:0;background:#f6f4ee;color:#16252a}
-main{max-width:1000px;margin:0 auto;padding:24px 16px}
-h1{margin:0 0 8px}.note{background:#fff;border-left:4px solid #0b6a61;padding:10px 14px}
-.bar{display:flex;gap:16px;align-items:end;flex-wrap:wrap;margin:16px 0}
-select,input,button{font:inherit;padding:6px 8px}button{background:#0b6a61;color:#fff;border:0;border-radius:6px;cursor:pointer}
-table{width:100%;border-collapse:collapse;background:#fff}th,td{text-align:left;padding:6px 8px;border-bottom:1px solid #e3dfd2;font-size:14px}
-#form{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px}#form label{font-size:13px;display:flex;flex-direction:column}
-#form button{grid-column:1/-1;justify-self:start}#result{font-size:18px;font-weight:600}.err{color:#b3261e}
