@@ -1,0 +1,78 @@
+{
+  "model": "logistic",
+  "sklearn": "1.9.1",
+  "features": [
+    "age",
+    "comorbidity_count",
+    "los_days",
+    "n_prior_admissions_12m",
+    "n_ed_visits_6m",
+    "num_medications",
+    "lab_sodium_last",
+    "followup_visit_scheduled",
+    "primary_dx_group",
+    "discharge_disposition"
+  ],
+  "numbers": [
+    "age",
+    "comorbidity_count",
+    "los_days",
+    "n_prior_admissions_12m",
+    "n_ed_visits_6m",
+    "num_medications",
+    "lab_sodium_last",
+    "followup_visit_scheduled"
+  ],
+  "categories": [
+    "primary_dx_group",
+    "discharge_disposition"
+  ],
+  "dropped": [
+    "weekend_discharge",
+    "admission_source",
+    "lab_creatinine_last",
+    "bmi",
+    "insurance_type",
+    "systolic_bp_last",
+    "hospital_site",
+    "lab_hemoglobin_last",
+    "sex",
+    "heart_rate_last"
+  ],
+  "train_rows": 58237,
+  "validation": {
+    "logistic": {
+      "roc_auc": 0.731,
+      "pr_auc": 0.376,
+      "brier": 0.124,
+      "accuracy": 0.837,
+      "precision_top5": 0.545,
+      "tp": 134,
+      "fp": 112,
+      "fn": 692,
+      "tn": 3990
+    },
+    "hist_gradient_boosting": {
+      "roc_auc": 0.725,
+      "pr_auc": 0.363,
+      "brier": 0.125,
+      "accuracy": 0.834,
+      "precision_top5": 0.516,
+      "tp": 127,
+      "fp": 119,
+      "fn": 699,
+      "tn": 3983
+    },
+    "xgboost": {
+      "roc_auc": 0.726,
+      "pr_auc": 0.365,
+      "brier": 0.125,
+      "accuracy": 0.834,
+      "precision_top5": 0.516,
+      "tp": 127,
+      "fp": 119,
+      "fn": 699,
+      "tn": 3983
+    }
+  }
+}
