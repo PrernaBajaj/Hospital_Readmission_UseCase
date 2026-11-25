@@ -6,7 +6,7 @@
 Identify the patients most likely to be readmitted within 30 days of discharge and help the care team at Lakeshore prioritize whom to contact each week, while adhering to a maximum outreach capacity of 5%
 
 ## 2. Success Definition & Metrics 
-* Precision at top 5% - Model must optimise for Precision at the top 5%. We should focus that the top 5% patient we give the care team are true high-risk patients
+* Precision at top 5% - Model must optimise for Precision at the top 5%. We should focus that the top 5% patients we give the care team are true high-risk patients
 * False Negative - Patient is actually re-admitted but the model did not select them for a call.  Hospital misses an opportunity for pro-active intervention and is also clinically concerning.
 * False Positive - Model selects a patient for a call, but actually the patient is not re-admitted which consumes the limited operational capacity and might cause unnecessary panic
 
