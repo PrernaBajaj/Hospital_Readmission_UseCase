@@ -16,12 +16,12 @@ Identify the patients most likely to be readmitted within 30 days of discharge a
 * Roughly 4% of the lab and vital values were missing. Instead of removing them altogether, they were imputed with median
 * Numerical features were standardized using StandardScaler to bring them onto a common scale and prevent larger-valued variables from disproportionately influencing the model. 
 
-## 3. Feature Selection
+## 4. Feature Selection
 * Started with 20 discharge day inputs. admission_id, patient_id, admit_date, discharge_date, post_discharge_call_logged excluded.
 * readmitted_30d is the target variable and hence not included
 * Used feature importance on the training data to identify the 10 most relevant features. The remaining 10 were dropped as they had minimal impact on model performance. Since both versions achieved the same ROC-AUC of 0.731, using 10 features keeps the model simpler, easier to explain and equally effective.
 
-## 4. Validation Approach and Model Comparison
+## 5. Validation Approach and Model Comparison
 * A random 80/20 train-test split approach was rejected due to time and patient leakage risks.
 * Training: The model is trained on discharges from January 2021 to July 2023. August is kept as a gap to allow 30-day readmission outcomes for late-July discharges to become available, avoiding incomplete labels. 
 * Testing: Model performance is evaluated on September–November 2023 discharges. December is excluded because the 30-day readmission outcomes are not yet fully available.
