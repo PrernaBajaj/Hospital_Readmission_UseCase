@@ -23,10 +23,10 @@
         │                │                    │
         ▼                ▼                    ▼
  outputs/            predictions.csv    backend/model_artifacts/
-  audit_report.md    (8,000 rows,        model.joblib
-  feature_importance  score 0 to 1)      info.json
-  validation_results                     holdout_scored.csv
-  calibration_table                              │
+validation_results    (8,000 rows,        model.joblib
+                       score 0 to 1)      info.json
+                                           holdout_scored.csv
+                                │
         │                                        ▼
         ▼                          ┌──────────────────────────┐
  decision_log.md                   │ backend/app.py (FastAPI) │
